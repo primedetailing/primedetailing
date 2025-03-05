@@ -79,10 +79,11 @@
 
                 <div class="input-group">
                     <i class="fas fa-list-alt"></i>
-                    <select class="input-field" required>
+                    <select class="input-field" id="tierDropdown" required>
                         <option value="">Select Service</option>
                         <option>Basic Detail ($100)</option>
                         <option>Premium Detail ($200)</option>
+                        <option>Ultimate Detail ($250)</option>
                     </select>
                 </div>
 
@@ -145,6 +146,32 @@
             document.querySelector('.booking-card').appendChild(confirmation);
             document.querySelector(".kys").remove();
         }
+        </script>
+        <script>
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const selectedService = getQueryParam("service");
+                const dropdown = document.getElementById("tierDropdown");
+
+                if (dropdown && selectedService) {
+                    let serviceMapping = {
+                        "basic": "Basic Detail ($100)",
+                        "premium": "Premium Detail ($200)",
+                        "ultimate": "Ultimate Detail ($250)"
+                    };
+
+                    for (let option of dropdown.options) {
+                        if (option.textContent.trim() === serviceMapping[selectedService]) {
+                            option.selected = true;
+                            break;
+                        }
+                    }
+                }
+            });
         </script>
 </body>
 </html>
