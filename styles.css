@@ -193,6 +193,7 @@ body {
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
+    text-decoration: none;
 }
 
 .cta-button:hover {
