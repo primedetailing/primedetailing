@@ -123,9 +123,9 @@
 
     <script src="../script.js"></script>
     <script>
-        document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+        document.getElementById('bookingForm').addEventListener('submit', async function (e) {
             e.preventDefault();
-            
+    
             // Get form values
             const formData = {
                 name: document.querySelector('input[placeholder="Full Name"]').value,
@@ -134,70 +134,46 @@
                 carType: document.querySelector('select').value,
                 service: document.querySelectorAll('select')[1].value
             };
-        
+    
             // Telegram message format
             const message = `📝 New Booking!%0A%0A
-        Name: ${formData.name}%0A
-        Phone: ${formData.phone}%0A
-        Email: ${formData.email}%0A
-        Car Type: ${formData.carType}%0A
-        Service: ${formData.service}`;
-        
+            Name: ${formData.name}%0A
+            Phone: ${formData.phone}%0A
+            Email: ${formData.email}%0A
+            Car Type: ${formData.carType}%0A
+            Service: ${formData.service}`;
+    
+            // Replace with your actual bot token and chat IDs
+            const botToken = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fM';
+            const chatIds = ['6036881812', '8018404300']; // Add multiple chat IDs
+    
             try {
-                // Replace with your actual bot token and chat ID
-                const botToken = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
-                const chatId = '6036881812';
-                
-                const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`);
-                
-                if(response.ok) {
-                    this.reset();
-                    showConfirmation();
+                // Send message to all chat IDs
+                for (const chatId of chatIds) {
+                    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`);
                 }
-            } catch(error) {
+    
+                this.reset();
+                showConfirmation();
+            } catch (error) {
                 console.error('Error:', error);
                 alert('Error submitting form. Please try again.');
             }
         });
-        
+    
         function showConfirmation() {
             const confirmation = document.createElement('div');
             confirmation.innerHTML = `
                 <div style="text-align: center; padding: 2rem; background: var(--secondary); border-radius: 8px; margin-top: 2rem;">
                     <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Infomation Received!</h3>
+                    <h3>Information Received!</h3>
                     <p>We'll contact you shortly</p>
                 </div>
             `;
             document.querySelector('.booking-card').appendChild(confirmation);
             document.querySelector(".kys").remove();
         }
-        </script>
-        <script>
-            function getQueryParam(param) {
-                const urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param);
-            }
-
-            document.addEventListener("DOMContentLoaded", function () {
-                const selectedService = getQueryParam("service");
-                const dropdown = document.getElementById("tierDropdown");
-
-                if (dropdown && selectedService) {
-                    let serviceMapping = {
-                        "basic": "Basic Detail",
-                        "premium": "Premium Detail",
-                        "ultimate": "Ultimate Detail"
-                    };
-
-                    for (let option of dropdown.options) {
-                        if (option.textContent.trim() === serviceMapping[selectedService]) {
-                            option.selected = true;
-                            break;
-                        }
-                    }
-                }
-            });
-        </script>
+    </script>
+    
 </body>
 </html>
