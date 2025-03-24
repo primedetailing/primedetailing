@@ -1,161 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work - Prime Auto Detailing</title>
-    <link rel="icon" type="image/png" href="../icon.png">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16936493563"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-16936493563');
-    </script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BGJJHY9010"></script>
+    <link rel="icon" type="image/png" href="icon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16936493563"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BGJJHY9010');
+  gtag('config', 'AW-16936493563');
 </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Prime Auto Detailing's gallery of stunning car transformations. See before-and-after images of our expert detailing work, from deep interior cleans to showroom-quality finishes.">
+    <meta name="keywords" content="car detailing gallery, before and after car detailing, auto detailing photos, car cleaning, ceramic coating, professional detailing, Newport, NSW, 2106, Australia">
+    <meta property="og:title" content="Prime Auto Detailing - Car Detailing Gallery">
+    <meta property="og:description" content="View our gallery of premium car detailing results. From interior deep cleans to flawless exterior shines, see how we bring cars back to perfection.">
+    <meta property="og:url" content="https://primedetailingnsw.com/gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://primedetailingnsw.com/images/gallery-preview.jpg">
+    <title>Car Detailing Gallery | Prime Auto Detailing</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67c935f58f4c44190b013998/1ilkvlhto';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     <nav class="navbar">
         <div class="logo">Prime Detailing</div>
         <div class="nav-links">
-            <a href="../">Home</a>
+            <a href="../#home">Home</a>
+            <a href="/car-detailing-gallery/">Our Work</a>
             <a href="../#services">Services</a>
             <a href="../#pricing">Pricing</a>
             <a href="../about/">About</a>
-            <a href="/car-detailing-gallery/">Gallery</a>
         </div>
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- Gallery Section -->
+
     <section class="gallery-section">
-        <h1 class="section-title">Our Work</h1>
-        <div class="gallery-grid" id="galleryContainer"></div>
+        <h2 class="section-title">Image Gallery</h2>
+        <div class="gallery-grid" id="galleryContainer">
+            <!-- Images will be inserted here by JavaScript -->
+        </div>
     </section>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <span class="close-btn" id="closeBtn">&times;</span>
-        <div class="lightbox-content" id="lightboxContent"></div>
+        <img class="lightbox-img" id="lightboxImg" alt="Enlarged view">
     </div>
 
-    <!-- Tawk.to Chat -->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/67c935f58f4c44190b013998/1ilkvlhto';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-
-    <!-- Scripts -->
     <script src="../script.js"></script>
+
     <script>
-        // Media Configuration - Update these paths!
-        const mediaItems = [
-            // { type: 'image', src: 'images/photo1.jpg', alt: 'Interior Detailing Example' },
-
-            { type: 'video', src: 'videos/video1.mp4', thumbnail: 'images/thumb1.png', alt: 'Car transformation' },
-            { type: 'video', src: 'videos/video2.mp4', thumbnail: 'images/thumb2.png', alt: 'Detailing truck' },
-            { type: 'video', src: 'videos/video3.mp4', thumbnail: 'images/thumb3.png', alt: 'Paint Correction Process' },
-            { type: 'image', src: 'images/photo2.jpg', alt: 'Interior Detailing Example' },
-            { type: 'image', src: 'images/photo3.jpg', alt: 'Exterior Detailing' },
-            { type: 'image', src: 'images/photo4.jpg', alt: 'Nice Interior' },
-            { type: 'image', src: 'images/photo5.jpg', alt: 'Look at these cars' },
-            { type: 'image', src: 'images/photo9.jpg', alt: 'Engine bay detail' }
-
-            // Add more items:
-            // { type: 'image', src: 'images/photo3.jpg', alt: '...' },
-            // { type: 'video', src: 'videos/video2.mp4', thumbnail: 'images/photo4.jpg', alt: '...' },
+        // Array of image paths - replace with your actual image paths
+        const imagePaths = [
+            'images/photo1.jpg',
+            'images/photo2.jpg',
+            'images/photo3.jpg',
+            'images/photo4.jpg',
+            'images/photo5.jpg',
+            'images/photo6.jpg',
+            'images/photo7.jpg',
+            'images/photo8.jpg',
+            'images/photo9.jpg',
+            'images/photo10.jpg',
+            'images/photo11.jpg',
+            'images/photo12.jpg',
         ];
-
-        // Initialize Gallery
-        function initGallery() {
-            const container = document.getElementById('galleryContainer');
+    
+        const galleryContainer = document.getElementById('galleryContainer');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('closeBtn');
+    
+        // Generate gallery cards
+        imagePaths.forEach((path, index) => {
+            const card = document.createElement('div');
+            card.className = 'gallery-card';
+            card.innerHTML = `
+                <img src="${path}" alt="Gallery image ${index + 1}" class="gallery-image">
+            `;
             
-            mediaItems.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'gallery-card';
-                
-                if(item.type === 'image') {
-                    card.innerHTML = `
-                        <img src="${item.src}" 
-                             class="gallery-image" 
-                             alt="${item.alt}"
-                             loading="lazy">
-                    `;
-                } else {
-                    card.innerHTML = `
-                        <div class="video-thumbnail">
-                            <img src="${item.thumbnail}" 
-                                 class="gallery-image" 
-                                 alt="${item.alt}"
-                                 loading="lazy">
-                            <i class="fas fa-play play-icon"></i>
-                        </div>
-                    `;
-                }
-                
-                card.addEventListener('click', () => showMedia(item));
-                container.appendChild(card);
-            });
-        }
-
-        // Show Media in Lightbox
-        function showMedia(item) {
-            const lightbox = document.getElementById('lightbox');
-            const content = document.getElementById('lightboxContent');
-            content.innerHTML = '';
-
-            if(item.type === 'image') {
-                content.innerHTML = `
-                    <img src="${item.src}" 
-                         class="lightbox-media" 
-                         alt="Enlarged view - ${item.alt}">
-                `;
-            } else {
-                content.innerHTML = `
-                    <video controls autoplay class="lightbox-media">
-                        <source src="${item.src}" type="video/mp4">
-                        Your browser does not support videos.
-                    </video>
-                `;
-            }
-
+            card.addEventListener('click', () => showLightbox(path));
+            galleryContainer.appendChild(card);
+        });
+    
+        // Lightbox functions
+        function showLightbox(imgSrc) {
             lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            lightboxImg.src = imgSrc;
         }
-
-        // Close Lightbox
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = 'auto';
-            document.querySelectorAll('video').forEach(v => v.pause());
-        }
-
-        // Event Listeners
-        document.addEventListener('DOMContentLoaded', initGallery);
-        document.getElementById('closeBtn').addEventListener('click', closeLightbox);
-        document.getElementById('lightbox').addEventListener('click', (e) => {
-            if(e.target === e.currentTarget) closeLightbox();
+    
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+    
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+            }
         });
     </script>
 </body>
