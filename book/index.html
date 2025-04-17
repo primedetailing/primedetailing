@@ -137,7 +137,7 @@
               <input type="file" id="photoUpload" name="photos[]" accept="image/*" capture="environment" multiple style="display: none;" />
               <label for="photoUpload" class="upload-label">
                 <i class="fas fa-camera fa-lg" style="margin-bottom: 1rem;"></i>
-                <p>Click to upload photos of your vehicle</p>
+                <p>Click to upload photo of your vehicle (1 max)</p>
               </label>
             </div>
             <div id="photoPreview"></div>
@@ -150,8 +150,11 @@
       </div>
     </div>
   </section>
+  <!-- IMPORTANT DO NOT REMOVE THIS SCRIPT SRC -->
+  <script src="../script.js"></script>
 
   <script>
+    
     // ---- Utility: compress an image to maxPx × maxPx at quality q ----
     function compressImage(file, maxPx=800, q=0.5) {
       return new Promise((res, rej) => {
