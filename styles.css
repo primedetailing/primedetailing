@@ -42,7 +42,6 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
 }
 
 .nav-links a {
@@ -50,6 +49,7 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
+    padding: 1rem;
 }
 
 .nav-links a:hover {
@@ -61,6 +61,11 @@ body {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
@@ -238,23 +243,29 @@ body {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: flex;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: var(--primary);
         flex-direction: column;
-        padding: 1rem;
         text-align: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: translateY(-20px);
     }
 
     .nav-links.active {
-        display: flex;
+        opacity: 1;
+        pointer-events: all;
+        transition: all 0.3s ease;
+        transform: translateY(0);
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     .hero h1 {
@@ -273,9 +284,34 @@ body {
     background: var(--secondary);
     padding: 2.5rem;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+#extraDetails {
+    background-color: #0a0a0a;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    max-height: 200px;
+    min-height: 60px;
+    resize: vertical;
+}
+
+#extraDetails:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.submit-button {
+    animation: glowAnimation 2s ease-in-out infinite;
+    box-shadow: 0px 0px 30px 1px #FFD70055;
 }
 
 .booking-form {
@@ -682,4 +718,15 @@ video.lightbox-media {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.meun-icon {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.hidden-menu-icon {
+    opacity: 0;
+    scale: 0.5;
+    transition: all 0.3s ease;
 }
