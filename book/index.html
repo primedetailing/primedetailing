@@ -74,7 +74,8 @@
             <a href="../contact/">Contact</a>
         </div>
         <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
+            <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
         </div>
     </nav>
 
@@ -125,7 +126,14 @@
                     </select>
                 </div>
 
-                <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">
+                <div class="input-group">
+                    <i class="fas fa-gears"></i>
+                    <input type="text" class="input-field" placeholder="Car Model" required>
+                </div>
+
+                <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details"></textarea>
+
+                <button type="submit" class="cta-button submit-button" style="width: 100%; margin-top: 1rem;">
                     <i class="fas fa-check-circle"></i> GET QUOTE
                 </button>
             </form>
