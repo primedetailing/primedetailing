@@ -108,15 +108,17 @@
                         <img src="${item.src}" 
                              class="gallery-image" 
                              alt="${item.alt}"
-                             loading="lazy">
+                             loading="lazy"
+                             style="user-select: none;">
                     `;
                 } else {
                     card.innerHTML = `
-                        <div class="video-thumbnail">
+                        <div class="video-thumbnail" user-select="none">
                             <img src="${item.thumbnail}" 
                                  class="gallery-image" 
                                  alt="${item.alt}"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 style="user-select: none;">
                             <i class="fas fa-play play-icon"></i>
                         </div>
                     `;
