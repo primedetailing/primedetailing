@@ -1,245 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="icon.png">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16936493563"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16936493563');
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BGJJHY9010"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BGJJHY9010');
-</script>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Auto Detailing | Book A Detail</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="description" content="Get the best mobile car detailing in NSW! We offer professional interior & exterior cleaning, ceramic coating, and full auto detailing services at competitive prices.">
-    <meta name="keywords" content="auto detailing, mobile car detailing, car cleaning, ceramic coating, interior detailing, exterior detailing">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Prime Auto Detailing - Professional Car Detailing Services">
-    <meta property="og:description" content="Get the best mobile car detailing services at competitive prices. Exterior and interior detailing, ceramic coatings, and more.">
-    <meta property="og:url" content="https://primedetailingnsw.com">
-    <meta property="og:type" content="website">
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Prime Auto Detailing",
-          "image": "https://primedetailingnsw.com/image.png",
-          "url": "https://primedetailingnsw.com",
-          "telephone": "+61 406 846 049",
-          "openingHours": "Mo-Sa 05:00-17:00",
-          "description": "Prime Auto Detailing offers expert mobile car detailing services, specializing in interior and exterior cleaning, ceramic coating, and more."
-        }
-    </script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Auto Detailing | Book A Detail</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <meta name="description" content="Get the best mobile car detailing in NSW!" />
+  <meta name="robots" content="index, follow" />
+  <style>
+    /* Photo Upload Styles */
+    .photo-upload-group {
+      margin: 1rem 0;
+    }
+    .photo-upload-container {
+      position: relative;
+      border: 2px dashed var(--accent);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .photo-upload-container:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: var(--primary);
+    }
+    .optional-label {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 0.7rem;
+      color: var(--text-light);
+      opacity: 0.7;
+    }
+    .upload-label {
+      cursor: pointer;
+      display: block;
+      color: var(--text-light);
+    }
+    .upload-label p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    /* Photo Preview Styles */
+    #photoPreview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+    #photoPreview img {
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+    }
+  </style>
 </head>
 <body>
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/67c935f58f4c44190b013998/1ilkvlhto';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <nav class="navbar">
-        <div class="logo">Prime Detailing</div>
-        <div class="nav-links">
-            <a href="../#home">Home</a>
-            <a href="/car-detailing-gallery/">Our Work</a>
-            <a href="../#services">Services</a>
-            <a href="../#pricing">Pricing</a>
-            <a href="../about/">About</a>
-            <a href="../contact/">Contact</a>
-        </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
-            <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">Prime Detailing</div>
+    <div class="nav-links">
+      <a href="../#home">Home</a>
+      <a href="/car-detailing-gallery/">Our Work</a>
+      <a href="../#services">Services</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
+      <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
+    </div>
+  </nav>
 
-    <section class="booking-section">
-        <div class="booking-card">
-            <div class="kys">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">REACH OUT TO US</h2>
-            <form class="booking-form" id="bookingForm">
-                <div class="form-row">
-                    <div class="input-group">
-                        <i class="fas fa-user"></i>
-                        <input type="text" class="input-field" placeholder="Full Name" required>
-                    </div>
-                    
-                    <div class="input-group">
-                        <i class="fas fa-phone"></i>
-                        <input type="tel" class="input-field" placeholder="Phone Number" required>
-                    </div>
-                </div>
+  <section class="booking-section">
+    <div class="booking-card">
+      <div class="kys">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">REACH OUT TO US</h2>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" class="input-field" placeholder="Full Name" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-phone"></i>
+              <input type="tel" name="phone" class="input-field" placeholder="Phone Number" required />
+            </div>
+          </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" class="input-field" placeholder="Email Address" required>
-                    </div>
-                    
-                    
-                    
-                    <div class="input-group">
-                        <i class="fas fa-car"></i>
-                        <select class="input-field" required>
-                            <option value="">Car Type</option>
-                            <option>Sedan</option>
-                            <option>SUV</option>
-                            <option>Van</option>
-                            <option>Coupe</option>
-                            <option>Hatchback</option>
-                            <option>Convertible</option>
-                            <option>Wagon</option>
-                            <option>Ute</option>
-                        </select>
-                        
-                    </div>
-                </div>
+          <div class="form-row">
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" class="input-field" placeholder="Email Address" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-car"></i>
+              <select name="carType" class="input-field" required>
+                <option value="">Car Type</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Van</option>
+                <option>Coupe</option>
+                <option>Hatchback</option>
+                <option>Convertible</option>
+                <option>Wagon</option>
+                <option>Ute</option>
+              </select>
+            </div>
+          </div>
 
-                <div class="input-group">
-                    <i class="fas fa-list-alt"></i>
-                    <select class="input-field" id="tierDropdown" required>
-                        <option value="">Select Service</option>
-                        <option>Basic Detail</option>
-                        <option>Premium Detail</option>
-                        <option>Ultimate Detail</option>
-                        <option>Car Seller Combo</option>
-                        
-                    </select>
-                </div>
+          <div class="input-group">
+            <i class="fas fa-list-alt"></i>
+            <select name="service" class="input-field" id="tierDropdown" required>
+              <option value="">Select Service</option>
+              <option>Basic Detail</option>
+              <option>Premium Detail</option>
+              <option>Ultimate Detail</option>
+              <option>Car Seller Combo</option>
+            </select>
+          </div>
 
-                <div class="input-group">
-                    <i class="fas fa-gears"></i>
-                    <input type="text" class="input-field" placeholder="Car Model" required>
-                </div>
+          <div class="input-group">
+            <i class="fas fa-gears"></i>
+            <input type="text" name="carModel" class="input-field" placeholder="Car Model" required />
+          </div>
 
-                <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details"></textarea>
+          <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details"></textarea>
 
-                <button type="submit" class="cta-button submit-button" style="width: 100%; margin-top: 1rem;">
-                    <i class="fas fa-check-circle"></i> GET QUOTE
-                </button>
-            </form>
-        </div>
-        </div>
-    </section>
+          <div class="photo-upload-group">
+            <div class="photo-upload-container">
+              <span class="optional-label">optional</span>
+              <input type="file" id="photoUpload" name="photos[]" accept="image/*" capture="environment" multiple style="display: none;" />
+              <label for="photoUpload" class="upload-label">
+                <i class="fas fa-camera fa-lg" style="margin-bottom: 1rem;"></i>
+                <p>Click to upload photos of your vehicle</p>
+              </label>
+            </div>
+            <div id="photoPreview"></div>
+          </div>
 
-    <script src="../script.js"></script>
-    <script>
-        document.getElementById('bookingForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const formData = {
-                name: document.querySelector('input[placeholder="Full Name"]').value,
-                phone: document.querySelector('input[placeholder="Phone Number"]').value,
-                email: document.querySelector('input[placeholder="Email Address"]').value,
-                carModel: document.querySelector('input[placeholder="Car Model"]').value,
-                extraDetails: document.getElementById('extraDetails').value,
-                carType: document.querySelector('select').value,
-                service: document.querySelectorAll('select')[1].value
-            };
-    
-            // Format Telegram message using Markdown
-            const message =
-                `🆕 *New Booking Received!*%0A` +
-                `———————————————%0A` +
-                `👤 *Name:* ${formData.name}%0A` +
-                `📞 *Phone:* ${formData.phone}%0A` +
-                `📧 *Email:* ${formData.email}%0A` +
-                `🚘 *Car Type:* ${formData.carType}%0A` +
-                `🚗 *Car Model:* ${formData.carModel}%0A` +
-                `🛠️ *Service:* ${formData.service}%0A` +
-                `📝 *Extra Details:* ${formData.extraDetails || 'N/A'}%0A` +
-                `———————————————`;
-    
-            try {
-                // Replace with your actual bot token
-                const botToken = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
-                const chatIds = ['6036881812', '8018404300']; // Telegram chat IDs
-    
-                // Send to all chat IDs
-                const responses = await Promise.all(chatIds.map(chatId =>
-                    fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}&parse_mode=Markdown`)
-                ));
-    
-                // Check if all responses are OK
-                if (responses.every(response => response.ok)) {
-                    this.reset();
-                    showConfirmation(); // Make sure this function exists
-                } else {
-                    alert('Failed to send message to Telegram.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Error submitting form. Please try again.');
-            }
-        });
-    
-        
-        function showConfirmation() {
-            const confirmation = document.createElement('div');
-            confirmation.innerHTML = `
-                <div style="text-align: center; padding: 2rem; background: var(--secondary); border-radius: 8px; margin-top: 2rem;">
-                    <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Infomation Received!</h3>
-                    <p>We'll contact you shortly</p>
-                </div>
-            `;
-            document.querySelector('.booking-card').appendChild(confirmation);
-            document.querySelector(".kys").remove();
+          <button type="submit" class="cta-button submit-button" style="width: 100%; margin-top: 1rem;">
+            <i class="fas fa-check-circle"></i> GET FREE QUOTE
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // ---- Utility: compress an image to maxPx × maxPx at quality q ----
+    function compressImage(file, maxPx=800, q=0.5) {
+      return new Promise((res, rej) => {
+        const img = new Image();
+        img.onload = () => {
+          let [w,h] = [img.width, img.height];
+          const ratio = Math.min(maxPx/w, maxPx/h, 1);
+          w *= ratio; h *= ratio;
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          canvas.toBlob(blob => blob ? res(blob) : rej('compress failed'),
+                        'image/jpeg', q);
+        };
+        img.onerror = () => rej('load error');
+        img.src = URL.createObjectURL(file);
+      });
+    }
+
+    // ---- Preview uploaded images ----
+    const photoInput   = document.getElementById('photoUpload');
+    const photoPreview = document.getElementById('photoPreview');
+    photoInput.addEventListener('change', e => {
+      photoPreview.innerHTML = '';
+      Array.from(e.target.files).forEach(file => {
+        const reader = new FileReader();
+        reader.onload = ev => {
+          const img = document.createElement('img');
+          img.src = ev.target.result;
+          photoPreview.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+
+    // ---- Create “Thank you” DIV ----
+    function createThankYou() {
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <div style="text-align:center;padding:2rem;background:var(--secondary);border-radius:8px;">
+          <i class="fas fa-check-circle" style="font-size:3rem;color:var(--accent);"></i>
+          <h3>Information Received!</h3>
+          <p>We'll contact you shortly.</p>
+        </div>`;
+      return div;
+    }
+
+    // ---- Form submit handler with sendMediaGroup batching ----
+    document.getElementById('bookingForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const form = e.target;
+
+      // 1) Collect form data
+      const data = {
+        name:    form.querySelector('input[name="name"]').value,
+        phone:   form.querySelector('input[name="phone"]').value,
+        email:   form.querySelector('input[name="email"]').value,
+        carType: form.querySelector('select[name="carType"]').value,
+        service: form.querySelector('#tierDropdown').value,
+        model:   form.querySelector('input[name="carModel"]').value,
+        extra:   document.getElementById('extraDetails').value || 'N/A'
+      };
+
+      // 2) Instant thank-you UI
+      const container = document.querySelector('.kys');
+      container.innerHTML = '';
+      container.appendChild(createThankYou());
+
+
+      // 3) Telegram config
+      const BOT     = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
+      const chatIds = ['6036881812','8018404300'];
+
+      // 4) Send booking text
+      const message = (
+  `📥 New Detailing Request\n\n` +
+  `👤 Name: ${data.name}\n` +
+  `📞 Phone: ${data.phone}\n` +
+  `📧 Email: ${data.email}\n` +
+  `🚘 Car Type: ${data.carType}\n` +
+  `🚗 Model: ${data.model}\n` +
+  `🧼 Service: ${data.service}\n\n` +
+  `📝 Extra Details:\n${data.extra}`
+);
+
+// only this gets URL‑encoded
+const text = encodeURIComponent(message);
+
+chatIds.forEach(id => {
+  fetch(
+    `https://api.telegram.org/bot${BOT}/sendMessage` +
+    `?chat_id=${id}&text=${text}&parse_mode=Markdown`,
+    { method: 'GET', keepalive: true }
+  );
+});
+
+      // 5) Compress all images
+      const files = Array.from(photoInput.files || []);
+      const blobs = await Promise.all(files.map(f => compressImage(f)));
+
+      // 6) Batch into up to 10 per sendMediaGroup
+      for (const chat of chatIds) {
+        for (let i = 0; i < blobs.length; i += 10) {
+          const batch = blobs.slice(i, i + 10);
+          const media = batch.map((_, idx) => ({
+            type: 'photo',
+            media: `attach://file${i+idx}`,
+            caption: idx === 0 ? `📷 Photo for ${data.name}` : undefined
+          }));
+          const formData = new FormData();
+          formData.append('chat_id', chat);
+          formData.append('media', JSON.stringify(media));
+          batch.forEach((b, idx) => {
+            formData.append(`file${i+idx}`, b, `photo${i+idx}.jpg`);
+          });
+          fetch(`https://api.telegram.org/bot${BOT}/sendMediaGroup`, {
+            method: 'POST',
+            body: formData,
+            keepalive: true
+          }).catch(console.error);
         }
-        </script>
-        <script>
-            function getQueryParam(param) {
-                const urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param);
-            }
-
-            document.addEventListener("DOMContentLoaded", function () {
-                const selectedService = getQueryParam("service");
-                const dropdown = document.getElementById("tierDropdown");
-
-                if (dropdown && selectedService) {
-                    let serviceMapping = {
-                        "basic": "Basic Detail",
-                        "premium": "Premium Detail",
-                        "ultimate": "Ultimate Detail",
-                        "carseller": "Car Seller Combo"
-                    };
-
-                    for (let option of dropdown.options) {
-                        if (option.textContent.trim() === serviceMapping[selectedService]) {
-                            option.selected = true;
-                            break;
-                        }
-                    }
-                }
-            });
-        </script>
+      }
+    });
+  </script>
 </body>
 </html>
