@@ -55,13 +55,12 @@
       position: relative;
       border: 2px dashed var(--accent);
       border-radius: 8px;
-      padding: 2rem;
       text-align: center;
       transition: all 0.3s ease;
     }
     .photo-upload-container:hover {
       background-color: rgba(255, 255, 255, 0.05);
-      border-color: var(--primary);
+      transform: translateY(-3px);
     }
     .optional-label {
       position: absolute;
@@ -75,6 +74,7 @@
       cursor: pointer;
       display: block;
       color: var(--text-light);
+      padding: 2rem;
     }
     .upload-label p {
       margin: 0;
@@ -205,7 +205,7 @@
           <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details (optional)"></textarea>
 
           <div class="photo-upload-group">
-            <div class="photo-upload-container">
+            <div class="photo-upload-container" id="uploadWrapper">
               <span class="optional-label">optional</span>
               <input
                 type="file"
@@ -242,6 +242,7 @@
   <script>
     const maxFiles = 1;
     const photoInput   = document.getElementById('photoUpload');
+    const uploadWrapper = document.getElementById('uploadWrapper')
     const photoPreview = document.getElementById('photoPreview');
     const lightboxModal = document.getElementById('lightboxModal');
     const lightboxImg = lightboxModal.querySelector('img');
