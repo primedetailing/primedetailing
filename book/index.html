@@ -110,7 +110,12 @@
                             <option value="">Car Type</option>
                             <option>Sedan</option>
                             <option>SUV</option>
-                            <option>Motorcycle</option>
+                            <option>Van</option>
+                            <option>Coupe</option>
+                            <option>Hatchback</option>
+                            <option>Convertible</option>
+                            <option>Wagon</option>
+                            <option>Ute</option>
                         </select>
                         
                     </div>
@@ -123,6 +128,8 @@
                         <option>Basic Detail</option>
                         <option>Premium Detail</option>
                         <option>Ultimate Detail</option>
+                        <option>Car Seller Combo</option>
+                        
                     </select>
                 </div>
 
@@ -151,38 +158,48 @@
                 name: document.querySelector('input[placeholder="Full Name"]').value,
                 phone: document.querySelector('input[placeholder="Phone Number"]').value,
                 email: document.querySelector('input[placeholder="Email Address"]').value,
+                carModel: document.querySelector('input[placeholder="Car Model"]').value,
+                extraDetails: document.getElementById('extraDetails').value,
                 carType: document.querySelector('select').value,
                 service: document.querySelectorAll('select')[1].value
             };
-        
-            // Telegram message format
-            const message = `📝 New Booking!%0A%0A
-        Name: ${formData.name}%0A
-        Phone: ${formData.phone}%0A
-        Email: ${formData.email}%0A
-        Car Type: ${formData.carType}%0A
-        Service: ${formData.service}`;
-        
+    
+            // Format Telegram message using Markdown
+            const message =
+                `🆕 *New Booking Received!*%0A` +
+                `———————————————%0A` +
+                `👤 *Name:* ${formData.name}%0A` +
+                `📞 *Phone:* ${formData.phone}%0A` +
+                `📧 *Email:* ${formData.email}%0A` +
+                `🚘 *Car Type:* ${formData.carType}%0A` +
+                `🚗 *Car Model:* ${formData.carModel}%0A` +
+                `🛠️ *Service:* ${formData.service}%0A` +
+                `📝 *Extra Details:* ${formData.extraDetails || 'N/A'}%0A` +
+                `———————————————`;
+    
             try {
                 // Replace with your actual bot token
                 const botToken = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
-                const chatIds = ['6036881812', '8018404300']; // Both chat IDs
-                
+                const chatIds = ['6036881812', '8018404300']; // Telegram chat IDs
+    
                 // Send to all chat IDs
-                const responses = await Promise.all(chatIds.map(chatId => 
-                    fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`)
+                const responses = await Promise.all(chatIds.map(chatId =>
+                    fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}&parse_mode=Markdown`)
                 ));
-        
+    
                 // Check if all responses are OK
-                if(responses.every(response => response.ok)) {
+                if (responses.every(response => response.ok)) {
                     this.reset();
-                    showConfirmation();
+                    showConfirmation(); // Make sure this function exists
+                } else {
+                    alert('Failed to send message to Telegram.');
                 }
-            } catch(error) {
+            } catch (error) {
                 console.error('Error:', error);
                 alert('Error submitting form. Please try again.');
             }
         });
+    
         
         function showConfirmation() {
             const confirmation = document.createElement('div');
@@ -211,7 +228,8 @@
                     let serviceMapping = {
                         "basic": "Basic Detail",
                         "premium": "Premium Detail",
-                        "ultimate": "Ultimate Detail"
+                        "ultimate": "Ultimate Detail",
+                        "carseller": "Car Seller Combo"
                     };
 
                     for (let option of dropdown.options) {
