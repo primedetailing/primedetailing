@@ -729,3 +729,69 @@ video.lightbox-media {
     scale: 0.5;
     transition: all 0.3s ease;
 }
+
+/* Dark‑theme Testimonials Section */
+.testimonials {
+    padding: 4rem 1rem;
+    background-color: #0a0a0a;    /* deep charcoal to match your dark theme */
+    color: #e0e0e0;               /* soft off‑white for headings/text */
+    text-align: center;
+  }
+  .testimonials .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;                  /* make the title pop */
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  .testimonial-card {
+    background: #1a1a1a;          /* slightly lighter card background */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.2s ease;
+
+  }
+  .testimonial-card:hover {
+    transform: translateY(-8px);                             /* lift */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);              /* deeper shadow */
+
+    outline-offset: 4px;                                     /* space the outline from the card */
+    cursor: default;                                         /* keep the regular arrow */
+  }
+
+  .testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 2px solid #333;      /* subtle frame for photos */
+  }
+  .testimonial-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  .testimonial-rating {
+    display: inline-flex;      /* make the stars a flex row */
+    justify-content: center;   /* center them in their container */
+    gap: 0.25rem;              /* uniform horizontal spacing */
+  }
+  
+  .testimonial-rating i {
+    color: #f5a623;     
+    display: inline-flex;      /* make the stars a flex row */
+    justify-content: center;   /* center them in their container */
+    gap: 0.25rem;           /* keep star colour for contrast */
+  }
+  .testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccc;                 /* lighter grey for the quote text */
+  }
+    
