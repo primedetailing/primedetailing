@@ -18,6 +18,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 .navbar {
     background: rgba(10, 10, 10, 0.95);
     padding: 1rem 5%;
@@ -73,11 +75,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/BestPhoto5.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 120px; /* <-- Adjusted to match navbar height */
 }
 
 .hero-content {
@@ -203,9 +205,6 @@ body {
 .cta-button:hover {
     transform: translateY(-3px);
 }
-
-
-
 
 
 .ctd-button {
