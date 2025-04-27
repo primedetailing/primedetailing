@@ -63,6 +63,18 @@
         }
       </script>
       
+      <script>
+        function adjustHeroHeight() {
+          // Set the hero section height to the window's inner height (viewport height)
+          document.querySelector('.hero').style.height = window.innerHeight + 'px';
+        }
+      
+        // Call the function on load and resize events
+        window.addEventListener('load', adjustHeroHeight);
+        window.addEventListener('resize', adjustHeroHeight);
+      </script>
+      
+
 </head>
 <body>
 
