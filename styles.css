@@ -435,12 +435,19 @@ body {
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .contact-card i {
     font-size: 2rem;
     color: var(--accent);
     margin-bottom: 1rem;
+}
+
+
+.contact-card:hover {
+    transform: translateY(-5px);
 }
 
 @media (max-width: 768px) {
