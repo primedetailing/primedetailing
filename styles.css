@@ -140,10 +140,10 @@ body {
     background-color: gold;
     color: black;
     font-weight: bold;
-    padding: 4px 10px;
+    padding: 6px 12px; /* Adjusted padding for better balance */
     border-radius: 999px;
-    font-size: 12px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px; /* Moderately larger font size */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
     white-space: nowrap;
 }
 
@@ -152,10 +152,11 @@ body {
     .badge {
         top: 8px;
         right: 8px;
-        font-size: 10px;
-        padding: 3px 8px;
+        font-size: 12px; /* Slightly smaller on mobile */
+        padding: 5px 10px;
     }
 }
+
 .package-features {
     list-style: none;
     padding: 0;
