@@ -121,6 +121,55 @@ body {
     }
   }
   
+
+
+  .package-card {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+/* Responsive fixes */
+@media (max-width: 600px) {
+    .badge {
+        top: 8px;
+        right: 8px;
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-icon {
+    margin-right: 8px;
+}
+
+.grayed-out {
+    color: #ccc;
+}
+
   
 
 .logo {
