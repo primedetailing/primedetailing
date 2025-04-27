@@ -387,6 +387,28 @@ body {
 }
 
 
+.ctc-button {
+    background: linear-gradient(45deg, #FFD700, #FFE55C);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.ctc-button:hover {
+    transform: translateY(-3px);
+}
+
+
 .ctd-button {
     background: linear-gradient(45deg, #FFD700, #FFE55C);
     color: var(--primary);
