@@ -106,6 +106,7 @@
         </div>
     </section>
 
+
      <!-- Testimonials Section -->
      <section class="testimonials" id="testimonials">
         <h2 class="section-title">What Our Clients Say</h2>
@@ -146,6 +147,7 @@
         </div>
       </section>
 
+      
     <section class="services" id="services">
         <h2 class="section-title">Our Services</h2>
         <div class="grid">
@@ -169,11 +171,7 @@
                 <h3>Engine Bay Cleaning</h3>
                 <p>Thorough cleaning of the engine bay for a polished look</p>
             </div>
-           
             
-
-
-
             <!-- <div class="card">
                 <i class="fas fa-shield-alt icon"></i>
                 <h3>Ceramic Coating</h3>
@@ -181,6 +179,40 @@
             </div> -->
         </div>
     </section>
+      
+    <section class="before-after">
+      <h2 class="section-title">Before After</h2>
+      <div class="ba-container">
+        <div class="ba-slider">
+          <div class="ba-wrapper">
+            <img src="car-detailing-gallery/before after/after.jpg" alt="After" class="ba-image">
+            <img src="car-detailing-gallery/before after/before.jpg" alt="Before" class="ba-image ba-before">
+          </div>
+          <div class="ba-handle"></div>
+        </div>
+    
+        <div class="ba-slider">
+          <div class="ba-wrapper">
+            <img src="car-detailing-gallery/before after/after2.jpg" alt="After" class="ba-image">
+            <img src="car-detailing-gallery/before after/before2.jpg" alt="Before" class="ba-image ba-before">
+          </div>
+          <div class="ba-handle"></div>
+        </div>
+    
+        <div class="ba-slider">
+          <div class="ba-wrapper">
+            <img src="car-detailing-gallery/before after/after3.jpg" alt="After" class="ba-image">
+            <img src="car-detailing-gallery/before after/before3.jpg" alt="Before" class="ba-image ba-before">
+          </div>
+          <div class="ba-handle"></div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    
+
 
     <section class="pricing" id="pricing">
         <h2 class="section-title">Packages</h2>
@@ -305,9 +337,77 @@
         </div>
     </section>
 
-    
-    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sliders = document.querySelectorAll('.ba-slider');
       
-    
+        sliders.forEach(slider => {
+          const before = slider.querySelector('.ba-before');
+          const handle = slider.querySelector('.ba-handle');
+          let isActive = false;
+          let targetPercent = 50; // Default middle
+          let currentPercent = 50;
+      
+          function moveSlider(x) {
+            const rect = slider.getBoundingClientRect();
+            let position = x - rect.left;
+            position = Math.max(0, Math.min(position, rect.width));
+            targetPercent = (position / rect.width) * 100;
+          }
+      
+          function animate() {
+            // Ease towards the target
+            currentPercent += (targetPercent - currentPercent) * 0.1;
+            before.style.clipPath = `inset(0 ${100 - currentPercent}% 0 0)`;
+            handle.style.left = `${currentPercent}%`;
+            requestAnimationFrame(animate);
+          }
+      
+          animate();
+      
+          slider.addEventListener('mousedown', (e) => {
+            isActive = true;
+            moveSlider(e.clientX);
+          });
+      
+          window.addEventListener('mouseup', () => {
+            isActive = false;
+          });
+      
+          window.addEventListener('mousemove', (e) => {
+            if (isActive) {
+              moveSlider(e.clientX);
+            }
+          });
+      
+          // Touch support
+          slider.addEventListener('touchstart', (e) => {
+            isActive = true;
+            moveSlider(e.touches[0].clientX);
+          });
+      
+          window.addEventListener('touchend', () => {
+            isActive = false;
+          });
+      
+          window.addEventListener('touchmove', (e) => {
+            if (isActive) {
+              moveSlider(e.touches[0].clientX);
+            }
+          });
+        });
+      });
+      </script>
+      
+      
+        
+        
+        
+        
+        
+    <script src="script.js"></script>
+
+            
+
 </body>
 </html>
