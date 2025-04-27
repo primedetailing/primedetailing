@@ -359,7 +359,6 @@
           }
       
           function animate() {
-            // Ease towards the target
             currentPercent += (targetPercent - currentPercent) * 0.1;
             before.style.clipPath = `inset(0 ${100 - currentPercent}% 0 0)`;
             handle.style.left = `${currentPercent}%`;
@@ -387,7 +386,7 @@
           slider.addEventListener('touchstart', (e) => {
             isActive = true;
             moveSlider(e.touches[0].clientX);
-          });
+          }, { passive: false }); // Important!
       
           window.addEventListener('touchend', () => {
             isActive = false;
@@ -396,18 +395,15 @@
           window.addEventListener('touchmove', (e) => {
             if (isActive) {
               moveSlider(e.touches[0].clientX);
+              e.preventDefault(); // ✨ Stop page from scrolling!
             }
-          });
+          }, { passive: false }); // Important!
         });
       });
       </script>
       
+
       
-        
-        
-        
-        
-        
     <script src="script.js"></script>
 
             
