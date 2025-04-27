@@ -250,6 +250,7 @@ body {
 
 .hero {
     height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,6 +263,12 @@ body {
 
 .hero-content {
     max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100vh; /* Ensure the section is at least the height of the screen */
+    }
 }
 
 .hero h1 {
