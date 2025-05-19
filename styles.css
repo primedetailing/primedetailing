@@ -1032,3 +1032,59 @@ video.lightbox-media {
     color: #ccc;                 /* lighter grey for the quote text */
   }
     
+
+.team-photo-section {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.team-photo-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 670px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.team-description {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
+.team-learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0.8rem 4rem;
+  border: none;
+  background-color: var(--accent);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  /* transition: background-color 0.3s ease, transform 0.2s ease; */
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.team-learn-more:hover {
+  background-color: var(--accent);
+  /* transform: scale(1.05); */
+  transform: translateY(-3px);
+
+}
