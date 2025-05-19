@@ -857,14 +857,23 @@ video.lightbox-media {
     position: relative;
     overflow: hidden;
     border: 1px solid var(--accent);
+    /* justify-content: center; */
+
     margin-top: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
     align-items: center;
-    box-shadow: 0px 0px 30px 1px #FFD70055;
-    animation: glowAnimation 2s ease-in-out infinite;
-    gap: 2rem;
+    /* box-shadow: 0px 0px 30px 1px #FFD70055; */
+    /* animation: glowAnimation 2s ease-in-out infinite; */
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start; /* Align left */
+    flex-direction: column; /* Stack content vertically */
+
+}
+.sellers-deal-wrapper a {
+    justify-content: center;
     width: 100%;
 }
 
@@ -927,6 +936,28 @@ video.lightbox-media {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Container that holds both cards side by side */
+.sellers-deal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Each card takes up about 45% of the row on larger screens */
+.sellers-deal-full-wrapper {
+    flex: 1 1 45%;
+    max-width: 100%;
+}
+
+/* On small screens (phones), stack the cards */
+@media (max-width: 1000px) {
+    .sellers-deal-full-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 .meun-icon {
