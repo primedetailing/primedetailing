@@ -1135,3 +1135,27 @@ video.lightbox-media {
 .navbar-shifted {
   margin-top: 60px; /* Adjust this to match banner height */
 }
+
+
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.nav-arrow {
+    font-size: 3rem;
+    color: var(--accent);
+    padding: 10px;
+    cursor: pointer;
+    /* background: rgba(0, 0, 0, 0.4); */
+    border-radius: 50%;
+    pointer-events: all;
+    user-select: none;
+}
+

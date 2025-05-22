@@ -83,6 +83,11 @@
     <div class="lightbox" id="lightbox">
         <span class="close-btn2" id="closeBtn">&times;</span>
         <div class="lightbox-content" id="lightboxContent"></div>
+<div class="lightbox-nav">
+    <span id="prevMedia" class="nav-arrow">&#10094;</span>
+    <span id="nextMedia" class="nav-arrow">&#10095;</span>
+</div>
+
     </div>
 
     <!-- Tawk.to Chat -->
@@ -169,9 +174,11 @@
 
         // Show Media in Lightbox
         function showMedia(item) {
+            currentIndex = mediaItems.findIndex(m => m.src === item.src);
             const lightbox = document.getElementById('lightbox');
             const content = document.getElementById('lightboxContent');
             content.innerHTML = '';
+            
 
             if(item.type === 'image') {
                 content.innerHTML = `
