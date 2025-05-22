@@ -23,7 +23,7 @@ body {
 .navbar {
     background: rgba(10, 10, 10, 0.95);
     padding: 1rem 5%;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
     display: flex;
@@ -258,7 +258,7 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 120px; /* <-- Adjusted to match navbar height */
+    padding-top: 1px; /* <-- Adjusted to match navbar height */
 }
 
 .hero-content {
@@ -1087,4 +1087,46 @@ video.lightbox-media {
   /* transform: scale(1.05); */
   transform: translateY(-3px);
 
+}
+
+.banner {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  font-family: sans-serif;
+  z-index: 999;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close-btn {
+  /* position: absolute; */
+  right: 10px;
+  top: 30%;
+  /* transform: translateY(-50%); */
+  font-size: 22px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #e74c3c;
+}
+
+.hidden {
+  display: none;
+}
+
+#navbar {
+  transition: margin-top 0.3s ease;
+}
+
+.navbar-shifted {
+  margin-top: 60px; /* Adjust this to match banner height */
 }
