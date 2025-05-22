@@ -815,7 +815,7 @@ video.lightbox-media {
     height: auto;
 }
 
-.close-btn {
+.close-btn2 {
     position: fixed;
     top: 30px;
     right: 30px;
@@ -826,7 +826,7 @@ video.lightbox-media {
     transition: transform 0.3s ease;
 }
 
-.close-btn:hover {
+.close-btn2:hover {
     transform: scale(1.1);
 }
 
