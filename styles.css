@@ -3,6 +3,7 @@
     --secondary: #1a1a1a;
     --accent: #FFD700;
     --text: #e0e0e0;
+    --otheryellow: #F1C40F;
 }
 
 * {
@@ -23,7 +24,8 @@ body {
 .navbar {
     background: rgba(10, 10, 10, 0.95);
     padding: 1rem 5%;
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
     width: 100%;
     top: 0;
     display: flex;
@@ -33,6 +35,9 @@ body {
     border-bottom: 1px solid var(--accent);
     z-index: 1000;
 }
+
+
+
 
 .before-after {
     text-align: center;
@@ -258,7 +263,7 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 120px; /* <-- Adjusted to match navbar height */
+    padding-top: 1px; /* <-- Adjusted to match navbar height */
 }
 
 .hero-content {
@@ -916,7 +921,7 @@ video.lightbox-media {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--accent);
+    background: var(--otheryellow);
   }
   
   /* Handle on hover */
@@ -1087,4 +1092,46 @@ video.lightbox-media {
   /* transform: scale(1.05); */
   transform: translateY(-3px);
 
+}
+
+.banner {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  font-family: sans-serif;
+  z-index: 999;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close-btn {
+  /* position: absolute; */
+  right: 10px;
+  top: 30%;
+  /* transform: translateY(-50%); */
+  font-size: 22px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #e74c3c;
+}
+
+.hidden {
+  display: none;
+}
+
+#navbar {
+  transition: margin-top 0.3s ease;
+}
+
+.navbar-shifted {
+  margin-top: 60px; /* Adjust this to match banner height */
 }
