@@ -1159,3 +1159,32 @@ video.lightbox-media {
     user-select: none;
 }
 
+
+.booking-banner {
+  background: #111;
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.15);
+}
+
+.booking-banner .highlight {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #111 inset !important;
+  -webkit-text-fill-color: #f1f1f1 !important;
+  background-color: #111 !important;
+  caret-color: #f1f1f1 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
