@@ -202,10 +202,10 @@
             </select>
           </div>
 
-          <div class="input-group">
+          <!-- <div class="input-group">
             <i class="fas fa-gears"></i>
             <input type="text" name="carModel" class="input-field" placeholder="Car Model" required />
-          </div>
+          </div> -->
 
           <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details (optional)"></textarea>
 
@@ -322,7 +322,6 @@
         email:   form.querySelector('input[name="email"]').value,
         carType: form.querySelector('select[name="carType"]').value,
         service: form.querySelector('#tierDropdown').value,
-        model:   form.querySelector('input[name="carModel"]').value,
         extra:   document.getElementById('extraDetails').value || 'N/A'
       };
 
@@ -338,7 +337,6 @@
         `📞 Phone: ${data.phone}\n` +
         `📧 Email: ${data.email}\n` +
         `🚘 Car Type: ${data.carType}\n` +
-        `🚗 Model: ${data.model}\n` +
         `🧼 Service: ${data.service}\n\n` +
         `📝 Extra Details:\n${data.extra}`
       );
