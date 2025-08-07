@@ -209,7 +209,7 @@
 
           <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details (optional)"></textarea>
 
-          <div class="photo-upload-group">
+          <!-- <div class="photo-upload-group">
             <div class="photo-upload-container" id="uploadWrapper">
               <span class="optional-label">optional</span>
               <input
@@ -227,10 +227,10 @@
               </label>
             </div>
             <div id="photoPreview"></div>
-          </div>
+          </div> -->
 
           <button type="submit" class="cta-button submit-button" style="width: 100%; margin-top: 1rem;">
-            <i class="fas fa-check-circle"></i> GET FREE QUOTE
+            <i class="fas fa-check-circle"></i> GET INSTANT QUOTE
           </button>
         </form>
       </div>
@@ -252,48 +252,48 @@
     const lightboxModal = document.getElementById('lightboxModal');
     const lightboxImg = lightboxModal.querySelector('img');
 
-    function compressImage(file, maxPx=800, q=0.5) {
-      return new Promise((res, rej) => {
-        const img = new Image();
-        img.onload = () => {
-          let [w,h] = [img.width, img.height];
-          const ratio = Math.min(maxPx/w, maxPx/h, 1);
-          w *= ratio; h *= ratio;
-          const canvas = document.createElement('canvas');
-          canvas.width = w; canvas.height = h;
-          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-          canvas.toBlob(blob => blob ? res(blob) : rej('compress failed'),
-                        'image/jpeg', q);
-        };
-        img.onerror = () => rej('load error');
-        img.src = URL.createObjectURL(file);
-      });
-    }
+    // function compressImage(file, maxPx=800, q=0.5) {
+    //   return new Promise((res, rej) => {
+    //     const img = new Image();
+    //     img.onload = () => {
+    //       let [w,h] = [img.width, img.height];
+    //       const ratio = Math.min(maxPx/w, maxPx/h, 1);
+    //       w *= ratio; h *= ratio;
+    //       const canvas = document.createElement('canvas');
+    //       canvas.width = w; canvas.height = h;
+    //       canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+    //       canvas.toBlob(blob => blob ? res(blob) : rej('compress failed'),
+    //                     'image/jpeg', q);
+    //     };
+    //     img.onerror = () => rej('load error');
+    //     img.src = URL.createObjectURL(file);
+    //   });
+    // }
 
-    photoInput.addEventListener('change', e => {
-      const files = Array.from(e.target.files);
-      if (files.length > maxFiles) {
-        alert(`You can only upload up to ${maxFiles} photo${maxFiles>1?'s':''}.`);
-        e.target.value = '';
-        photoPreview.innerHTML = '';
-        return;
-      }
-      photoPreview.innerHTML = '';
-      files.forEach(file => {
-        const reader = new FileReader();
-        reader.onload = ev => {
-          const img = document.createElement('img');
-          img.src = ev.target.result;
-          img.alt = 'Upload preview';
-          img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightboxModal.style.display = 'flex';
-          });
-          photoPreview.appendChild(img);
-        };
-        reader.readAsDataURL(file);
-      });
-    });
+    // photoInput.addEventListener('change', e => {
+    //   const files = Array.from(e.target.files);
+    //   if (files.length > maxFiles) {
+    //     alert(`You can only upload up to ${maxFiles} photo${maxFiles>1?'s':''}.`);
+    //     e.target.value = '';
+    //     photoPreview.innerHTML = '';
+    //     return;
+    //   }
+    //   photoPreview.innerHTML = '';
+    //   files.forEach(file => {
+    //     const reader = new FileReader();
+    //     reader.onload = ev => {
+    //       const img = document.createElement('img');
+    //       img.src = ev.target.result;
+    //       img.alt = 'Upload preview';
+    //       img.addEventListener('click', () => {
+    //         lightboxImg.src = img.src;
+    //         lightboxModal.style.display = 'flex';
+    //       });
+    //       photoPreview.appendChild(img);
+    //     };
+    //     reader.readAsDataURL(file);
+    //   });
+    // });
 
     lightboxModal.addEventListener('click', e => {
       if (e.target === lightboxModal) {
@@ -407,7 +407,7 @@
       <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
           <h3 style="font-size: 18px; margin-bottom: 10px;">Follow Us</h3>
           <div style="display: flex; gap: 10px;">
-              <a href="https://www.instagram.com/primedetailingnsw/" style="color: #f1c40f; font-size: 20px; text-decoration: none;">Instagram</a>
+              <a href="https://www.instagram.com/primedetailingnsw/" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Instagram</a>
           </div>
       </div>
 
