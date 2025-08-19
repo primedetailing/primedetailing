@@ -59,21 +59,46 @@
         </div>
     </nav>
 
-    <section class="services" style="padding: 7rem 5% 5rem;">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="grid">
-            <div class="contact-card">
-                <i class="fas fa-phone"></i>
-                <h3>Call Us</h3>
-                <p>+61 403 385 406<br>
-            </div>
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email Us</h3>
-                <p>primedetailingnsw@gmail.com<br>
-            </div>
-        </div>
-    </section>
+<section class="services" style="padding: 7rem 5% 5rem;">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="grid">
+    <a href="tel:+61403385406" class="contact-card mobile-link">
+      <i class="fas fa-phone"></i>
+      <h3>Call Us</h3>
+      <p>+61 403 385 406</p>
+    </a>
+
+    <a href="mailto:primedetailingnsw@gmail.com" class="contact-card mobile-link">
+      <i class="fas fa-envelope"></i>
+      <h3>Email Us</h3>
+      <p>primedetailingnsw@gmail.com</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  /* Default (desktop) → not clickable */
+  .mobile-link {
+    pointer-events: none; /* disables clicking */
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* On mobile screens */
+  @media (max-width: 768px) {
+    .mobile-link {
+      pointer-events: auto; /* enables clicking */
+    }
+
+    .mobile-link:hover {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+  }
+</style>
+    
+
 
     <script src="../script.js"></script>
 <br>
