@@ -277,10 +277,19 @@ body {
     letter-spacing: 2px;
 }
 
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+
+
+.hero h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
 
 .services {
     padding: 5rem 5%;
