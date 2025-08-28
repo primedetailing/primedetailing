@@ -291,6 +291,43 @@ body {
 }
 
 
+.hero2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/BestPhoto5.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px; /* <-- Adjusted to match navbar height */
+}
+
+.hero2-content {
+    max-width: 800px;
+}
+
+.hero2 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero2 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero2 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
 .services {
     padding: 5rem 5%;
 }
@@ -1221,3 +1258,5 @@ input:-webkit-autofill:active {
   caret-color: #f1f1f1 !important;
   transition: background-color 9999s ease-in-out 0s;
 }
+
+
