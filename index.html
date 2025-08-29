@@ -437,6 +437,19 @@ We're passionate detailers based in Sydney, dedicated to making every car look i
     </div>
   </div>
 </div>
+
+<!-- Why Join Our Monthly plan? -->
+<section class="services" id="benefits" style="background:#0A0A0A; color:#ffffff; padding:60px 20px; text-align:center;">
+  <h2 class="section-title" style="color:#ffffff;">Why Join Our Monthly plan?</h2>
+  <p style="max-width:800px; margin:20px auto; color:#ccc; font-size:16px;">
+    Keep your car looking flawless all year round with our <strong>Prime Platinum Club Subscription</strong>. 
+    Enjoy exclusive discounts, free extras, and priority booking all designed to make car care effortless. 
+    Set it and forget it we’ll handle the rest, so your car always shines like new.  
+    You can learn more <a href="/monthly/" style="color:#f1c40f; text-decoration:solid;">here</a>.
+  </p>
+</section>
+
+
     </section>
 
     <script>
@@ -504,6 +517,123 @@ We're passionate detailers based in Sydney, dedicated to making every car look i
 
       
     <script src="script.js"></script>
+
+
+
+<section class="services" id="faq">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">How do I get a quote?</button>
+      <div class="faq-answer">
+        <p>You can get a quote
+        <a href="/book/" style="color:#ffd700; text-decoration:underline;">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I contact you?</button>
+      <div class="faq-answer">
+        <p>You can reach us via phone or email. 
+        <a href="/contact/" style="color:#ffd700; text-decoration:underline;">Click here to contact us</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What areas do you service?</button>
+      <div class="faq-answer">
+        <p>We service the Northern Beaches and surrounding Sydney suburbs. 
+        <a href="#service-area" style="color:#ffd700; text-decoration:underline;">See full service area</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer maintenance plans?</button>
+      <div class="faq-answer">
+        <p>Yes our monthly subscription plan keeps your car looking brand new year-round more information
+        <a href="/monthly/" style="color:#ffd700; text-decoration:underline;">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What if it rains on my booking day?</button>
+      <div class="faq-answer">
+        <p>If the weather doesn’t cooperate, we’ll reschedule your appointment at no extra cost.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you handle luxury or performance cars?</button>
+      <div class="faq-answer">
+        <p>Absolutely. We have experience with high-end vehicles and use safe, professional products designed for delicate finishes.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555; /* lighter line for dark bg */
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #f1c40f; /* make question text white */
+  transition: background 0.3s;
+}
+.faq-question:hover {
+  background: #222; /* subtle hover effect */
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  color: #c4c4c4; /* lighter text for answers */
+}
+.faq-answer p {
+  margin: 10px 0;
+}
+.faq-item.active .faq-answer {
+  max-height: 200px; /* adjust if your answers are longer */
+}
+
+</style>
+
+<script>
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    // Toggle the clicked item
+    item.classList.toggle('active');
+    
+    // Close others if you want only one open at a time
+    faqItems.forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('active');
+      }
+    });
+  });
+});
+</script>
+
+    
 <br>
 <!-- Call to Action Section -->
 <div style="background: linear-gradient(135deg, #f1c40f, #f1c40f); color: #161616; text-align: center; padding: 40px 20px; font-family: 'Poppins', sans-serif;">
