@@ -1260,3 +1260,17 @@ input:-webkit-autofill:active {
 }
 
 
+
+
+
+/* Monthly Plan Page Only */
+#pricing.package-page .grid {
+  display: flex;
+  justify-content: center; /* centers the single card */
+}
+
+#pricing.package-page .package-card {
+  max-width: 800px; /* prevents it from stretching too wide */
+  width: 100%;      /* allows full width on mobile */
+  margin: 1rem;
+}
