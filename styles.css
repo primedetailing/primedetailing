@@ -291,6 +291,46 @@ body {
 }
 
 
+
+
+.hero3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/DSC01132-2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px; /* <-- Adjusted to match navbar height */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero3 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero3 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero3 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
+
 .hero2 {
     height: 100vh;
     display: flex;
