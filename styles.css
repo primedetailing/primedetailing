@@ -128,15 +128,15 @@ body {
   
 
 
-  .package-card {
-    position: relative;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+    .package-card {
+      position: relative;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+  }
 
 .badge {
     position: absolute;
@@ -1146,7 +1146,8 @@ video.lightbox-media {
     line-height: 1.4;
     color: #ccc;                 /* lighter grey for the quote text */
   }
-    
+
+
 
 .team-photo-section {
   text-align: center;
@@ -1468,4 +1469,73 @@ input:-webkit-autofill:active {
 
   .read-more:hover {
     color: #cbad00;
+  }
+
+  @media (max-width: 768px) {
+  #site-banner {
+    display: none;
+  }
+}
+/* Container for all packages */
+.package-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.our-work,
+  .our-work * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  .our-work {
+    max-width: 1000px; /* constrain the slider width */
+    margin: 0 auto;   /* center it horizontally */
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .our-work .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-work .swiper-slide img {
+    width: auto;           /* keep original width */
+    max-width: 100%;       /* never exceed container */
+    height: 400px;         /* fixed height */
+    object-fit: contain;   /* fit entire image inside container */
+    border-radius: 10px;
+  }
+
+
+
+   /* Yellow pagination dots */
+  .swiper-pagination-bullet {
+    background-color: #FFD700;
+    opacity: 0.7;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  /* Desktop larger height */
+@media (min-width: 1024px) {
+  .our-work .swiper-slide img {
+    height: 450px; /* bigger image */
+  }
+}
+
+    /* Responsive slider height for mobile */
+  @media (max-width: 600px) {
+    .our-work .swiper-slide img {
+      height: 225px; /* smaller height on phones */
+    }
   }
