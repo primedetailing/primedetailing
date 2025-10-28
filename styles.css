@@ -330,6 +330,44 @@ body {
 }
 
 
+.hero4 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/DSC00603.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px; /* <-- Adjusted to match navbar height */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero4 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero4 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero4 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
+
 
 .hero2 {
     height: 100vh;
@@ -598,6 +636,16 @@ body {
 
 
 }
+
+.booking-card2 {
+    background: #111111;
+    padding: 2.5rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Updated Booking Section Styles */
 .booking-section {
@@ -1309,6 +1357,58 @@ video.lightbox-media {
   color: #ffd900f8;
   font-weight: 600;
 }
+
+
+
+
+.booking-banner2 {
+  background: #111;
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.15);
+}
+
+.booking-banner2 .highlight {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.countdown-text {
+  color: #ffc107;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+
+
+.booking-banner2yel {
+  background: #111;
+  /* border: 1px solid #ffc107; */
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 500;
+  /* box-shadow: 0 0 12px rgba(255, 193, 7, 0.15); */
+}
+
+
+.booking-banner2yel .highlightyel {
+  color: #ffd900f8;
+  font-weight: 600;
+}
+
+
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus,

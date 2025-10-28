@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../icon.png">
+
+  <!-- Google tag (gtag.js) - Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGJJHY9010"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGJJHY9010');
+  </script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prime Detailing NSW | Claim Your 20% Off Car Detailing</title>
+
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Claim your 20% off mobile car detailing with Prime Detailing NSW. Book professional interior, exterior, and ceramic coating services across Sydney’s Northern Beaches — limited-time referral offer.">
+<meta name="keywords" content="20% off car detailing, car detailing discount Northern Beaches, mobile car detailing Sydney offer, claim car detailing deal, professional detailing Newport, Manly, Mona Vale, Prime Detailing NSW offer">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Cache-Control" content="max-age=31536000, public">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:title" content="Prime Detailing NSW | Claim Your 20% Off Car Detailing">
+<meta property="og:description" content="Fill in your details to claim 20% off your next mobile car detail with Prime Detailing NSW. Serving Newport, Manly, Mona Vale, and Sydney’s Northern Beaches.">
+<meta property="og:url" content="https://primedetailingnsw.com/claim-discount/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://primedetailingnsw.com/photoembed.png">
+<meta property="og:image:alt" content="Prime Detailing NSW - Claim 20% Off Car Detailing Offer">
+
+<!-- Twitter Card -->
+<meta name="twitter:title" content="Prime Detailing NSW | Claim 20% Off Mobile Car Detailing">
+<meta name="twitter:description" content="Book and claim your 20% off mobile car detailing with Prime Detailing NSW — interior, exterior, and ceramic coating specialists across Sydney’s Northern Beaches.">
+<meta name="twitter:image" content="https://primedetailingnsw.com/photoembed.png">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://primedetailingnsw.com/claim-discount/">
+
+<!-- Structured Data (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Prime Detailing NSW",
+  "image": "https://primedetailingnsw.com/photoembed.png",
+  "url": "https://primedetailingnsw.com/claim-discount/",
+  "telephone": "+61 406 846 049",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bungan Head Road, Newport NSW 2106",
+    "addressLocality": "Newport",
+    "addressRegion": "NSW",
+    "postalCode": "2106",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-33.6580",
+    "longitude": "151.3113"
+  },
+  "openingHours": "Mo-Sa 05:00-17:00",
+  "description": "Claim your 20% off referral discount with Prime Detailing NSW. We provide premium mobile car detailing, including interior, exterior, and ceramic coating services across Sydney’s Northern Beaches.",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61564608196292",
+    "https://www.instagram.com/primedetailingnsw"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "name": "20% Off Mobile Car Detailing" },
+    { "@type": "Service", "name": "Interior Car Detailing" },
+    { "@type": "Service", "name": "Exterior Car Detailing" },
+    { "@type": "Service", "name": "Ceramic Coating Service" }
+  ]
+}
+</script>
+
+<link rel="canonical" href="https://primedetailingnsw.com/book/">
+
+<script>
+  // Helper functions for cookies
+  function setCookie(name, value, minutes) {
+    const d = new Date();
+    d.setTime(d.getTime() + (minutes * 60 * 1000));
+    document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+  }
+
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  // Get stored end time or create one
+  let countdownEnd = getCookie("referralCountdown");
+  if (!countdownEnd) {
+    countdownEnd = new Date().getTime() + 5 * 60 * 1000; // 5 minutes
+    setCookie("referralCountdown", countdownEnd, 5); // store for 5 minutes
+  } else {
+    countdownEnd = parseInt(countdownEnd);
+  }
+
+  const countdownTimer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countdownEnd - now;
+
+    if (distance <= 0) {
+      clearInterval(countdownTimer);
+      document.getElementById("countdown").textContent = "00:00";
+      document.cookie = "referralCountdown=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; // clear cookie
+      return;
+    }
+
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    document.getElementById("countdown").textContent =
+      `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  }, 1000);
+</script>
+
+
+  <style>
+    /* Photo Upload Styles */
+    .photo-upload-group {
+      margin: 1rem 0;
+    }
+    .photo-upload-container {
+      position: relative;
+      border: 2px dashed var(--accent);
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .photo-upload-container:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateY(-3px);
+    }
+    .optional-label {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 0.7rem;
+      color: var(--text-light);
+      opacity: 0.7;
+    }
+    .upload-label {
+      cursor: pointer;
+      display: block;
+      color: var(--text-light);
+      padding: 2rem;
+    }
+    .upload-label p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    /* Photo Preview Styles */
+    #photoPreview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+    #photoPreview img {
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    #photoPreview img:hover {
+      transform: scale(1.05);
+    }
+    /* Lightbox Modal Styles */
+    #lightboxModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+    #lightboxModal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <!-- Tawk.to live chat -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/67c935f58f4c44190b013998/1ilkvlhto';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <nav class="navbar">
+    <a href="../#home" class="logo" style="text-decoration: none;">Prime Detailing</a>
+    <div class="nav-links">
+      <a href="../#home">Home</a>
+      <a href="/car-detailing-gallery/">Our Work</a>
+      <a href="../#services">Services</a>
+      <a href="../#pricing">Packages</a>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+      <a href="../book">Get Quote</a>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
+      <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
+    </div>
+  </nav>
+
+  <section class="booking-section">
+    <div class="booking-card2">
+      <div class="kys">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Claim Discount</h2>
+<div class="booking-banner2"> 
+  <p><span class="highlight">🚗 Fill in your details</span> to claim your 20% off</p>
+  <p class="countdown-text">Offer ends in <span id="countdown"></span>!</p>
+</div>
+
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" class="input-field" placeholder="Full Name" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-phone"></i>
+              <input type="tel" name="phone" class="input-field" placeholder="Phone Number" required />
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" class="input-field" placeholder="Email Address" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-car"></i>
+              <select name="carType" class="input-field" required>
+                <option value="">Car Type</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Van</option>
+                <option>Coupe</option>
+                <option>Hatchback</option>
+                <option>Convertible</option>
+                <option>Wagon</option>
+                <option>Ute</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-list-alt"></i>
+            <select name="service" class="input-field" id="tierDropdown" required>
+              <option value="">Select Service</option>
+              <option>Basic Detail</option>
+              <option>Premium Detail</option>
+              <option>Ultimate Detail</option>
+            </select>
+          </div>
+          
+          <div class="input-group">
+             <i class="fa-solid fa-user-tag"></i>
+             <input type="ref" name="referred" class="input-field" placeholder="Referred by (name)" required />
+           </div>
+          
+          <!-- <div class="input-group">
+            <i class="fas fa-gears"></i>
+            <input type="text" name="carModel" class="input-field" placeholder="Car Model" required />
+          </div> -->
+
+          <!-- <textarea name="extraDetails" id="extraDetails" placeholder="Extra Details (optional)"></textarea> -->
+
+          <!-- <div class="photo-upload-group">
+            <div class="photo-upload-container" id="uploadWrapper">
+              <span class="optional-label">optional</span>
+              <input
+                type="file"
+                id="photoUpload"
+                name="photos[]"
+                accept="image/*"
+                capture="environment"
+                multiple
+                style="display: none;"
+              />
+              <label for="photoUpload" class="upload-label">
+                <i class="fas fa-camera fa-lg" style="margin-bottom: 1rem;"></i>
+                <p>Click to upload photo of your vehicle (1 max)</p>
+              </label>
+            </div>
+            <div id="photoPreview"></div>
+          </div> -->
+
+          <button type="submit" class="cta-button submit-button" style="width: 100%; margin-top: 1rem;">
+            <i class="fas fa-check-circle"></i> CLAIM NOW!
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal">
+    <img src="" alt="Expanded preview" />
+  </div>
+
+  <!-- IMPORTANT DO NOT REMOVE THIS SCRIPT SRC -->
+  <script src="../script.js"></script>
+  <script>
+    const maxFiles = 1;
+    const photoInput   = document.getElementById('photoUpload');
+    const uploadWrapper = document.getElementById('uploadWrapper')
+    const photoPreview = document.getElementById('photoPreview');
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = lightboxModal.querySelector('img');
+
+    // function compressImage(file, maxPx=800, q=0.5) {
+    //   return new Promise((res, rej) => {
+    //     const img = new Image();
+    //     img.onload = () => {
+    //       let [w,h] = [img.width, img.height];
+    //       const ratio = Math.min(maxPx/w, maxPx/h, 1);
+    //       w *= ratio; h *= ratio;
+    //       const canvas = document.createElement('canvas');
+    //       canvas.width = w; canvas.height = h;
+    //       canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+    //       canvas.toBlob(blob => blob ? res(blob) : rej('compress failed'),
+    //                     'image/jpeg', q);
+    //     };
+    //     img.onerror = () => rej('load error');
+    //     img.src = URL.createObjectURL(file);
+    //   });
+    // }
+
+    // photoInput.addEventListener('change', e => {
+    //   const files = Array.from(e.target.files);
+    //   if (files.length > maxFiles) {
+    //     alert(`You can only upload up to ${maxFiles} photo${maxFiles>1?'s':''}.`);
+    //     e.target.value = '';
+    //     photoPreview.innerHTML = '';
+    //     return;
+    //   }
+    //   photoPreview.innerHTML = '';
+    //   files.forEach(file => {
+    //     const reader = new FileReader();
+    //     reader.onload = ev => {
+    //       const img = document.createElement('img');
+    //       img.src = ev.target.result;
+    //       img.alt = 'Upload preview';
+    //       img.addEventListener('click', () => {
+    //         lightboxImg.src = img.src;
+    //         lightboxModal.style.display = 'flex';
+    //       });
+    //       photoPreview.appendChild(img);
+    //     };
+    //     reader.readAsDataURL(file);
+    //   });
+    // });
+
+    lightboxModal.addEventListener('click', e => {
+      if (e.target === lightboxModal) {
+        lightboxModal.style.display = 'none';
+        lightboxImg.src = '';
+      }
+    });
+
+    function createThankYou() {
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <div style="text-align:center;padding:2rem;background:var(--secondary);border-radius:8px;">
+          <i class="fas fa-check-circle" style="font-size:3rem;color:var(--accent);"></i>
+          <h3>Information Received!</h3>
+          <p>We'll contact you shortly.</p>
+        </div>`;
+      return div;
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        name:    form.querySelector('input[name="name"]').value,
+        phone:   form.querySelector('input[name="phone"]').value,
+        email:   form.querySelector('input[name="email"]').value,
+        carType: form.querySelector('select[name="carType"]').value,
+        service: form.querySelector('#tierDropdown').value,
+        referrd: form.querySelector('input[name="referred"]').value 
+      };
+
+      const container = document.querySelector('.kys');
+      container.innerHTML = '';
+      container.appendChild(createThankYou());
+
+      const BOT     = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
+      const chatIds = ['6036881812','8018404300'];
+      const message = (
+        `📥 New 20% OFF REFERRAL Request\n\n` +
+        `👤 Name: ${data.name}\n` +
+        `📞 Phone: ${data.phone}\n` +
+        `📧 Email: ${data.email}\n` +
+        `🚘 Car Type: ${data.carType}\n` +
+        `🧼 Service: ${data.service}\n` +
+        `📝 REFERRED BY: ${data.referrd}`
+      );
+      const text = encodeURIComponent(message);
+      chatIds.forEach(id => {
+        fetch(
+          `https://api.telegram.org/bot${BOT}/sendMessage` +
+          `?chat_id=${id}&text=${text}&parse_mode=Markdown`,
+          { method: 'GET', keepalive: true }
+        );
+      });
+
+      const files = Array.from(photoInput.files || []);
+      const blobs = await Promise.all(files.map(f => compressImage(f)));
+      for (const chat of chatIds) {
+        for (let i = 0; i < blobs.length; i += 10) {
+          const batch = blobs.slice(i, i + 10);
+          const media = batch.map((_, idx) => ({
+            type: 'photo',
+            media: `attach://file${i+idx}`,
+            caption: idx === 0 ? `📷 Photo for ${data.name}` : undefined
+          }));
+          const formData = new FormData();
+          formData.append('chat_id', chat);
+          formData.append('media', JSON.stringify(media));
+          batch.forEach((b, idx) => {
+            formData.append(`file${i+idx}`, b, `photo${i+idx}.jpg`);
+          });
+          fetch(`https://api.telegram.org/bot${BOT}/sendMediaGroup`, {
+            method: 'POST',
+            body: formData,
+            keepalive: true
+          }).catch(console.error);
+        }
+      }
+    });
+  </script>
+
+
+<footer style="background-color: #161616; color: #f1c40f; padding: 40px 20px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start;">
+      
+      <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+          <h2 style="font-size: 24px; margin-bottom: 10px;">Prime Detailing NSW</h2>
+          <p style="color: #ccc;">Mobile Car Detailing on Sydney's Northern Beaches. Bringing showroom shine to your driveway.</p>
+      </div>
+      
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+          <h3 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0;">
+              <li><a href="../#home" style="color: #f1c40f; text-decoration: none;">Home</a></li>
+              <li><a href="/car-detailing-gallery/" style="color: #f1c40f; text-decoration: none;">Our Work</a></li>
+              <li><a href="../#services" style="color: #f1c40f; text-decoration: none;">Services</a></li>
+              <li><a href="../#pricing" style="color: #f1c40f; text-decoration: none;">Packages</a></li>
+              <li><a href="../about/" style="color: #f1c40f; text-decoration: none;">About</a></li>
+              <li><a href="../contact/" style="color: #f1c40f; text-decoration: none;">Contact</a></li>
+              <li><a href="../book" style="color: #f1c40f; text-decoration: none;">Get Quote</a></li>
+          </ul>
+      </div>
+      
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+          <h3 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h3>
+          <p style="color: #ccc; margin: 5px 0;">Northern Beaches, Sydney</p>
+          <p style="color: #ccc; margin: 5px 0;">Phone: +61 403 385 406</p>
+          <p style="color: #ccc; margin: 5px 0;">Email: primedetailingnsw@gmail.com</p>
+      </div>
+      
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+          <h3 style="font-size: 18px; margin-bottom: 10px;">Follow Us</h3>
+          <div style="display: flex; gap: 10px;">
+              <a href="https://www.instagram.com/primedetailingnsw/" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Instagram</a>
+          </div>
+              <a href="https://www.facebook.com/profile.php?id=61564608196292" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Facebook</a>
+              <br>
+              <a href="https://share.google/SWs5cGoMNR4zLyF7s" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Leave Us A Review</a>
+      </div>
+
+  </div>
+
+  <div style="text-align: center; padding-top: 20px; color: #555; font-size: 14px;">
+      &copy; 2025 Prime Detailing NSW. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
