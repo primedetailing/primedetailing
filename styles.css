@@ -335,7 +335,7 @@ body {
 
 
 .hero7 {
-    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    height: 75vh; /* reduced from 100vh to 60% of viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +404,7 @@ body {
 
 
 .hero8 {
-    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    height: 75vh; /* reduced from 100vh to 60% of viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -472,7 +472,7 @@ body {
 
 
 .hero9 {
-    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    height: 75vh; /* reduced from 100vh to 60% of viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
