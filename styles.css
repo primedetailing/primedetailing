@@ -270,6 +270,8 @@ body {
     max-width: 800px;
 }
 
+
+
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -328,6 +330,208 @@ body {
     margin-bottom: 2rem;
     font-weight: normal; /* removes bold */
 }
+
+
+
+
+.hero7 {
+    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/good.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px;
+}
+
+@media (max-width: 768px) {
+    .hero7 {
+        height: auto; /* let it grow naturally */
+        padding: 60px 20px; /* add top/bottom padding */
+    }
+
+    .hero7 h1 {
+        font-size: 2rem; /* smaller on mobile */
+    }
+
+    .hero7 h2 {
+        font-size: 1rem; /* scale subheading */
+    }
+
+    .hero7 p {
+        font-size: 1rem; /* adjust paragraph */
+    }
+}
+
+.hero7-content {
+    max-width: 800px;
+}
+
+
+
+.hero7 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero7 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero8 {
+    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/rsq8.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px;
+}
+
+@media (max-width: 768px) {
+    .hero8 {
+        height: auto; /* let it grow naturally */
+        padding: 60px 20px; /* add top/bottom padding */
+    }
+
+    .hero8 h1 {
+        font-size: 2rem; /* smaller on mobile */
+    }
+
+    .hero8 h2 {
+        font-size: 1rem; /* scale subheading */
+    }
+
+    .hero8 p {
+        font-size: 1rem; /* adjust paragraph */
+    }
+}
+
+.hero8-content {
+    max-width: 800px;
+}
+
+
+
+.hero8 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero8 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hero9 {
+    height: 60vh; /* reduced from 100vh to 60% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(car-detailing-gallery/images/rsq8rim.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px;
+}
+
+@media (max-width: 768px) {
+    .hero9 {
+        height: auto; /* let it grow naturally */
+        padding: 60px 20px; /* add top/bottom padding */
+    }
+
+    .hero9 h1 {
+        font-size: 2rem; /* smaller on mobile */
+    }
+
+    .hero9 h2 {
+        font-size: 1rem; /* scale subheading */
+    }
+
+    .hero9 p {
+        font-size: 1rem; /* adjust paragraph */
+    }
+}
+
+.hero9-content {
+    max-width: 800px;
+}
+
+
+
+.hero9 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero9 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal; /* removes bold */
+}
+
+
+
+
+
 
 
 .hero4 {
@@ -1639,3 +1843,175 @@ input:-webkit-autofill:active {
       height: 225px; /* smaller height on phones */
     }
   }
+
+
+  
+
+  
+.cth-button  {
+    background: linear-gradient(45deg, #54575b, #54575b);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.cth-button:hover {
+    transform: translateY(-3px);
+}
+
+
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* centers horizontally */
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column; /* stack buttons */
+        align-items: center;   /* keep them centered */
+    }
+
+    .button-group a {
+        width: 100%;
+        max-width: 300px; /* keeps buttons clean */
+    }
+
+    .button-group button {
+        width: 100%; /* full width buttons */
+    }
+}
+
+
+
+
+.package-button {
+    background: linear-gradient(45deg, #FFD700, #FFD700);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+
+
+
+}
+
+.package-button:hover {
+    transform: translateY(-3px);
+}
+
+.cards-wrapper2 {
+    display: flex;
+    max-width: 1000px;
+    margin: 2rem auto;
+    gap: 2rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0 20px; /* default spacing */
+}
+
+@media (min-width: 768px) {
+    .cards-wrapper {
+        padding: 0; /* remove padding on desktop */
+    }
+}
+
+
+.starting-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f1c40f; /* matches your yellow theme */
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.price-note {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+  .reviews-snippet {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #f1c40f; /* matches your yellow theme */
+    display: block;
+    margin-bottom: 4px;
+}
+
+.review-count {
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.review-tagline {
+    font-size: 0.9em;
+    color: #747474;
+}
+
+/* Reviews Snippet Mobile Adjustments */
+@media (max-width: 600px) {
+    .review-tagline {
+        font-size: 0.8em; /* smaller text for phones */
+        line-height: 1.2em; /* tighter line spacing */
+    }
+}
+
+
+.stars {
+    font-size: 1.2rem; /* default size */
+}
+
+.review-count {
+    font-size: 1rem;
+    display: block; /* ensures it goes on its own line if needed */
+    margin-top: 0.3rem;
+}
+
+.review-tagline {
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    color: #ccc; /* optional, subtle text */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .stars {
+        font-size: 1rem;
+    }
+
+    .review-count {
+        font-size: 0.85rem;
+    }
+
+    .review-tagline {
+        font-size: 0.75rem;
+    }
+}

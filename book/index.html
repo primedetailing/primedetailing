@@ -190,29 +190,33 @@ src="https://www.facebook.com/tr?id=1566334037833365&ev=PageView&noscript=1"
     })();
   </script>
 
-  <nav class="navbar">
-    <a href="../#home" class="logo" style="text-decoration: none;">Prime Detailing</a>
-    <div class="nav-links">
-      <a href="../#home">Home</a>
-      <a href="/car-detailing-gallery/">Our Work</a>
-      <a href="../#services">Services</a>
-      <a href="../#pricing">Packages</a>
-      <a href="../about/">About</a>
-      <a href="../contact/">Contact</a>
-      <a href="../book">Get Quote</a>
-    </div>
-    <div class="menu-toggle">
-      <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
-      <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
-    </div>
-  </nav>
+   <nav class="navbar">
+        <a href="../#home" class="logo" style="text-decoration: none;">Prime Detailing</a>
+        <div class="nav-links">
+            <a href="../#home">Home</a>
+            <a href="/car-detailing-gallery/">Our Work</a>
+            <a href="../#services">Services</a>
+            <!-- <a href="../#pricing">Packages</a> -->
+            <a href="../about/">About Us</a>
+            <a href="../book/">Contact Us</a>
+            <a href="tel:0403 385 406">Call Now</a>
+        </div>
+          <div class="menu-toggle">
+            <i class="fas fa-bars meun-icon" id="burgerIcon"></i>
+            <i class="fas fa-close meun-icon hidden-menu-icon" id="closeIcon"></i>
+        </div>
+    </nav>
 
   <section class="booking-section">
     <div class="booking-card">
       <div class="kys">
         <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">REACH OUT TO US</h2>
         <div class="booking-banner">
-  <p><span class="highlight">🚗 Only 1 spot left this week!</span> Book now to secure yours.</p>
+          
+      <span class="stars2">⭐⭐⭐⭐⭐</span>
+    <span class="review-count">500+ happy clients, with 45+ verified 5-star reviews.</span>
+    <p class="review-tagline">See why so many trust Prime Detailing NSW with their cars</p>
+
 </div>
 
         <form class="booking-form" id="bookingForm">
@@ -251,12 +255,11 @@ src="https://www.facebook.com/tr?id=1566334037833365&ev=PageView&noscript=1"
           <div class="input-group">
             <i class="fas fa-list-alt"></i>
             <select name="service" class="input-field" id="tierDropdown" required>
-              <option value="">Select Service</option>
-              <option>Basic Detail</option>
-              <option>Premium Detail</option>
-              <option>Ultimate Detail</option>
-              <option>Car Seller Combo</option>
-              <option>Ceramic Coating Combo</option>
+              <option value="">What are you interested in?</option>
+              <option>Mobile Detailing</option>
+              <option>Pre-sale Detailing</option>
+              <option>Ceramic Coating</option>
+          
             </select>
           </div>
 
@@ -390,12 +393,12 @@ src="https://www.facebook.com/tr?id=1566334037833365&ev=PageView&noscript=1"
       const BOT     = '8050072010:AAGIkC9r_PiOG-KbS1QNKLMvmp04rCA6fMA';
       const chatIds = ['6036881812','8018404300'];
       const message = (
-        `📥 New Detailing Request\n\n` +
+        `📥 New Enquiry\n\n` +
         `👤 Name: ${data.name}\n` +
         `📞 Phone: ${data.phone}\n` +
         `📧 Email: ${data.email}\n` +
         `🚘 Car Type: ${data.carType}\n` +
-        `🧼 Service: ${data.service}\n\n` +
+        `🧼 Enquiry Type: ${data.service}\n\n` +
         `📝 Extra Details:\n${data.extra}`
       );
       const text = encodeURIComponent(message);
@@ -433,52 +436,190 @@ src="https://www.facebook.com/tr?id=1566334037833365&ev=PageView&noscript=1"
     });
   </script>
 
+<h2 class="section-title">What Our Customers Say</h2> 
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-7d55a1ad-ceaf-40ac-afc6-a0ce311cdd9d" data-elfsight-app-lazy></div>
 
+
+
+ <!-- Include Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<section class="our-work">
+  <h2 class="section-title">Our Work</h2>
+
+  <!-- Swiper container -->
+  <div class="swiper our-work-slider">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/rsq8.jpg" alt="Showroom-Quality Audi R8 Detailing Restore Shine & Luxury Finish" />
+      </div>
+      
+
+           <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/good.jpg" alt="VW T-Roc R Interior Detailing Deep Clean & Restore Cabin Luxury" />
+      </div>
+
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/rsq8gray.jpg" alt="Audi R8 Interior Detailing Deep Clean, Restore Luxury Finish" />
+      </div>
+
+
+         <!-- Slide 4 -->
+     <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/DSC00939.jpg" alt="Audi R8 Exterior Detailing Restore Shine & Protect Luxury Finish" />
+      </div>
+
+          <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/good (4).jpg" alt="Mercedes GLE450 with freshly detailed interior by Prime Detailing NSW, mobile car detailing in Sydney’s Northern Beaches" />
+      </div>
+      <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/DSC02914.jpg" alt="VW T-Roc with freshly restored and detailed rims by Prime Detailing NSW, mobile car detailing in Sydney’s Northern Beaches" />
+      </div>
+          <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/DSC00591.jpg" alt="Freshly detailed car interior showing clean carpet lines, by Prime Detailing NSW, mobile detailing in Sydney’s Northern Beaches" />
+      </div>
+         <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/rsq8rim.jpg" alt="Audi RSQ3 Rims Detailed" />
+      </div>
+       <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/VWOUTSIDE.jpg" alt="VW T-Roc with freshly restored and detailed" />
+      </div>
+        <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/BestPhoto4.jpg" alt="Volvo Front Interior Detailing Deep Clean Seats, Dashboard & Console" />
+      </div>
+
+        <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/rr82.jpeg" alt="Volvo Front Interior Detailing Deep Clean Seats, Dashboard & Console" />
+      </div>
+
+          <div class="swiper-slide">
+        <img src="..//car-detailing-gallery/images/JEEP.jpg" alt="Volvo Front Interior Detailing Deep Clean Seats, Dashboard & Console" />
+      </div>
+
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<style>
+  .swiper-button-next,
+  .swiper-button-prev
+   {
+    display: none;
+
+  }
+
+ /* Yellow pagination dots */
+  .swiper-pagination-bullet {
+    background-color: #ffd700;
+    opacity: 0.7;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.our-work-slider', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    autoplay: { delay: 3000, disableOnInteraction: false },
+  });
+</script>
+
+<br>
+<br>
+
+
+
+<!-- Call CTA Section -->
+<div style="background: linear-gradient(135deg, #f1c40f, #f1c40f); color: #161616; text-align: center; padding: 40px 20px; font-family: 'Poppins', sans-serif;">
+    
+    <h2 style="font-size: 28px; margin-bottom: 15px;">
+        Need a Quick Answer?
+    </h2>
+
+    <p style="font-size: 16px; margin-bottom: 25px;">
+        Call us now and get booked in within minutes.
+    </p>
+
+    <a href="tel:0403 385 406">
+        <button class="book2-button">
+            CALL NOW
+        </button>
+    </a>
+
+</div>
 
 <footer style="background-color: #161616; color: #f1c40f; padding: 40px 20px; font-family: 'Poppins', sans-serif;">
-  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start;">
-      
-      <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-          <h2 style="font-size: 24px; margin-bottom: 10px;">Prime Detailing NSW</h2>
-          <p style="color: #ccc;">Mobile Car Detailing on Sydney's Northern Beaches. Bringing showroom shine to your driveway.</p>
-      </div>
-      
-      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-          <h3 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h3>
-          <ul style="list-style: none; padding: 0;">
-              <li><a href="../#home" style="color: #f1c40f; text-decoration: none;">Home</a></li>
-              <li><a href="/car-detailing-gallery/" style="color: #f1c40f; text-decoration: none;">Our Work</a></li>
-              <li><a href="../#services" style="color: #f1c40f; text-decoration: none;">Services</a></li>
-              <li><a href="../#pricing" style="color: #f1c40f; text-decoration: none;">Packages</a></li>
-              <li><a href="../about/" style="color: #f1c40f; text-decoration: none;">About</a></li>
-              <li><a href="../contact/" style="color: #f1c40f; text-decoration: none;">Contact</a></li>
-              <li><a href="../book" style="color: #f1c40f; text-decoration: none;">Get Quote</a></li>
-          </ul>
-      </div>
-      
-      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-          <h3 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h3>
-          <p style="color: #ccc; margin: 5px 0;">Northern Beaches, Sydney</p>
-          <p style="color: #ccc; margin: 5px 0;">Phone: +61 403 385 406</p>
-          <p style="color: #ccc; margin: 5px 0;">Email: primedetailingnsw@gmail.com</p>
-      </div>
-      
-      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-          <h3 style="font-size: 18px; margin-bottom: 10px;">Follow Us</h3>
-          <div style="display: flex; gap: 10px;">
-              <a href="https://www.instagram.com/primedetailingnsw/" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Instagram</a>
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start;">
+          
+          <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+              <h2 style="font-size: 24px; margin-bottom: 10px;">Prime Detailing NSW</h2>
+              <p style="color: #ccc;">Mobile Car Detailing on Sydney's Northern Beaches. Bringing showroom shine to your driveway.</p>
           </div>
-              <a href="https://www.facebook.com/profile.php?id=61579402065340" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Facebook</a>
-              <br>
-              <a href="https://share.google/SWs5cGoMNR4zLyF7s" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Leave Us A Review</a>
+          
+          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+              <h3 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h3>
+              <ul style="list-style: none; padding: 0;">
+                  <li><a href="../#home" style="color: #f1c40f; text-decoration: none;">Home</a></li>
+                  <li><a href="/car-detailing-gallery/" style="color: #f1c40f; text-decoration: none;">Our Work</a></li>
+                  <li><a href="../#services" style="color: #f1c40f; text-decoration: none;">Services</a></li>
+                  <!-- <li><a href="../#pricing" style="color: #f1c40f; text-decoration: none;">Packages</a></li> -->
+                  <li><a href="../mobile-detailing/" style="color: #f1c40f; text-decoration: none;">Detailing Packages</a></li>
+                  <li><a href="../pre-sale-detailing/" style="color: #f1c40f; text-decoration: none;">Pre-sale Packages</a></li>
+                   <li><a href="../ceramic-coating/" style="color: #f1c40f; text-decoration: none;">Ceramic Coating Packages</a></li>
+                  <li><a href="../about/" style="color: #f1c40f; text-decoration: none;">About Us</a></li>
+                  <li><a href="../contact/" style="color: #f1c40f; text-decoration: none;">Contact Us</a></li>
+              </ul>
+          </div>
+          
+          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+              <h3 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h3>
+              <p style="color: #ccc; margin: 5px 0;">Northern Beaches, Sydney</p>
+              <p style="color: #ccc; margin: 5px 0;">Phone: +61 403 385 406</p>
+              <p style="color: #ccc; margin: 5px 0;">Email: primedetailingnsw@gmail.com</p>
+          </div>
+          
+          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+              <h3 style="font-size: 18px; margin-bottom: 10px;">Follow Us</h3>
+              <div style="display: flex; gap: 10px;">
+                
+                  <a href="https://www.instagram.com/primedetailingnsw/" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Instagram</a>
+              </div>
+               <a href="https://www.facebook.com/profile.php?id=61579402065340" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Facebook</a>
+               <br>
+               <a href="https://share.google/SWs5cGoMNR4zLyF7s" style="color: #f1c40f; font-size: 18px; text-decoration: none;">Leave Us A Review</a>
+          </div>
+  
       </div>
 
-  </div>
-
-  <div style="text-align: center; padding-top: 20px; color: #555; font-size: 14px;">
-      &copy; 2025 Prime Detailing NSW. All rights reserved.
-  </div>
-</footer>
-
+      <div style="text-align: center; padding-top: 20px; color: #555; font-size: 14px;">
+          &copy; 2026 Prime Detailing NSW. All rights reserved. ABN 68 217 452 417
+      </div>
+  </footer>
+  
+    
 </body>
 </html>
